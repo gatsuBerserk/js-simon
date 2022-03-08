@@ -10,13 +10,19 @@
     // Schema mentale e svolgimento
 
     // 1) Inserire 5 numeri casuali in un array e stamparlo a schermo
-        const number= document.getElementById("dom-numbers");
+        const number= document.getElementById("dom-numbers"); 
         const casualNumber=[]; 
         for ( let i = 0; i < 5; i++){
         casualNumber.push(Math.floor(Math.random()* 100));
-        
         };
         console.log(casualNumber); 
         // Stampa su elemento Dom
         number.innerHTML= casualNumber;
-       
+
+    // 2) inserire fuzione time(i numeri non si devono vedere)
+        // Funzione 
+        setTimeout(numeri, 2000) // prova di 2 secondi
+        function numeri (){
+         document.getElementById("dom-numbers").classList.add("d-none");
+        }
+    
