@@ -24,5 +24,14 @@
         setTimeout(numeri, 2000) // prova di 2 secondi
         function numeri (){
          document.getElementById("dom-numbers").classList.add("d-none");
-        }
+        };
+    // 3) prompt utente (chiedo di inserire i 5 numeri)
+            const memoryUtent=[];  
+            for (let i = 0; i < 5; i++){
+                const utente= parseInt(prompt("inserisci i numeri che ti ricordi")); 
+                memoryUtent.push(utente);
+            }
+            console.log(memoryUtent) 
+
+    // Comparazione degli array formati
     
